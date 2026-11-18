@@ -1,5 +1,7 @@
 services:
   app:
-    image: sumeetgaurav/e-commerce-python:latest
+    build: .
+    container_name: week11-compose-app
     ports:
-      - "80:80"
+      - "8083:80"
+    restart: always
